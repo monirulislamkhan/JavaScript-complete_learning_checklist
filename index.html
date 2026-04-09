@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Complete Learning Checklist</title>
+    <style>
+      body {
+        background-color: #1d1d1d;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        background: #0f0f0f;
+        color: #e0e0e0;
+        padding: 32px 24px;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #f0f0f0;
+        margin-bottom: 4px;
+      }
+      .sub {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 32px;
+      }
+      .floor-block {
+        margin-bottom: 28px;
+      }
+      .floor-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: #888;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 10px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #1e1e1e;
+      }
+      .topics {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 8px;
+      }
+      a.topic-card {
+        display: block;
+        background: #181818;
+        border: 1px solid #242424;
+        border-radius: 8px;
+        padding: 12px 14px;
+        text-decoration: none;
+        color: #d0d0d0;
+        transition:
+          background 0.15s,
+          border-color 0.15s;
+      }
+      a.topic-card:hover {
+        background: #1e1e2e;
+        border-color: #3a3a6a;
+      }
+      .topic-num {
+        font-size: 10px;
+        color: #555;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+      .topic-name {
+        font-size: 13px;
+        color: #c8c8c8;
+        line-height: 1.4;
+      }
+      .tag {
+        display: inline-block;
+        font-size: 10px;
+        padding: 2px 7px;
+        border-radius: 10px;
+        margin-top: 6px;
+        font-weight: 600;
+      }
+      .t-core {
+        background: #1a2a4a;
+        color: #6699cc;
+      }
+      .t-async {
+        background: #2a1a4a;
+        color: #9966cc;
+      }
+      .t-adv {
+        background: #2a1a1a;
+        color: #cc7744;
+      }
+      .t-dom {
+        background: #1a2a1a;
+        color: #66aa66;
+      }
+      .t-perf {
+        background: #2a2a1a;
+        color: #aaaa44;
+      }
+      .t-pattern {
+        background: #2a1a2a;
+        color: #cc66aa;
+      }
+      .stats {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 28px;
+        flex-wrap: wrap;
+      }
+      .stat {
+        background: #181818;
+        border: 1px solid #242424;
+        border-radius: 8px;
+        padding: 12px 18px;
+      }
+      .stat-num {
+        font-size: 22px;
+        font-weight: 700;
+        color: #a0a0ff;
+      }
+      .stat-label {
+        font-size: 11px;
+        color: #555;
+        margin-top: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Complete Learning Checklist</h1>
+    <p class="sub">60 topics · 7 floors · Click any topic to open its practice file</p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">60</div>
+        <div class="stat-label">Total topics</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">7</div>
+        <div class="stat-label">Floors</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">60</div>
+        <div class="stat-label">HTML practice files</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">60</div>
+        <div class="stat-label">notes.md files</div>
+      </div>
+    </div>
+
+    <div class="floor-block">
+      <div class="floor-title">Floor 01 — JS Engine Internals</div>
+      <div class="topics">
+        <a class="topic-card" href="Floor-01_JS-Engine-Internals/01_V8-Parse-Compile-Execute/index.html">
+          <div class="topic-num">Topic 01</div>
+          <div class="topic-name">V8 — Parse, Compile, Execute</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-01_JS-Engine-Internals/02_Call-Stack-LIFO/index.html">
+          <div class="topic-num">Topic 02</div>
+          <div class="topic-name">Call Stack — LIFO</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-01_JS-Engine-Internals/03_Memory-Heap/index.html">
+          <div class="topic-num">Topic 03</div>
+          <div class="topic-name">Memory Heap</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-01_JS-Engine-Internals/04_Garbage-Collection/index.html">
+          <div class="topic-num">Topic 04</div>
+          <div class="topic-name">Garbage Collection</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-01_JS-Engine-Internals/05_JIT-Compilation/index.html">
+          <div class="topic-num">Topic 05</div>
+          <div class="topic-name">JIT Compilation</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-01_JS-Engine-Internals/06_Execution-Context/index.html">
+          <div class="topic-num">Topic 06</div>
+          <div class="topic-name">Execution Context</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-01_JS-Engine-Internals/07_Creation-vs-Execution-Phase/index.html">
+          <div class="topic-num">Topic 07</div>
+          <div class="topic-name">Creation vs Execution Phase</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="floor-block">
+      <div class="floor-title">Floor 02 — Core JS Concepts</div>
+      <div class="topics">
+        <a class="topic-card" href="Floor-02_Core-JS-Concepts/08_Hoisting/index.html">
+          <div class="topic-num">Topic 08</div>
+          <div class="topic-name">Hoisting</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-02_Core-JS-Concepts/09_Temporal-Dead-Zone/index.html">
+          <div class="topic-num">Topic 09</div>
+          <div class="topic-name">Temporal Dead Zone</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-02_Core-JS-Concepts/10_Scope-Global-Function-Block/index.html">
+          <div class="topic-num">Topic 10</div>
+          <div class="topic-name">Scope — Global, Function, Block</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-02_Core-JS-Concepts/11_Lexical-Scoping-Scope-Chain/index.html">
+          <div class="topic-num">Topic 11</div>
+          <div class="topic-name">Lexical Scoping & Scope Chain</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-02_Core-JS-Concepts/12_Closures/index.html">
+          <div class="topic-num">Topic 12</div>
+          <div class="topic-name">Closures</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-02_Core-JS-Concepts/13_Closures-in-Loops/index.html">
+          <div class="topic-num">Topic 13</div>
+          <div class="topic-name">Closures in Loops</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-02_Core-JS-Concepts/14_This-Keyword-6-Rules/index.html">
+          <div class="topic-num">Topic 14</div>
+          <div class="topic-name">this Keyword — 6 Rules</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-02_Core-JS-Concepts/15_call-apply-bind/index.html">
+          <div class="topic-num">Topic 15</div>
+          <div class="topic-name">call(), apply(), bind()</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-02_Core-JS-Concepts/16_Arrow-Functions-and-This/index.html">
+          <div class="topic-num">Topic 16</div>
+          <div class="topic-name">Arrow Functions & this</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-02_Core-JS-Concepts/17_Prototypes-and-Chain/index.html">
+          <div class="topic-num">Topic 17</div>
+          <div class="topic-name">Prototypes & Prototype Chain</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-02_Core-JS-Concepts/18_Proto-vs-Prototype/index.html">
+          <div class="topic-num">Topic 18</div>
+          <div class="topic-name">__proto__ vs .prototype</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+        <a class="topic-card" href="Floor-02_Core-JS-Concepts/19_ES6-Classes/index.html">
+          <div class="topic-num">Topic 19</div>
+          <div class="topic-name">ES6 Classes</div>
+          <span class="tag t-core">Core JS</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="floor-block">
+      <div class="floor-title">Floor 03 — Async JavaScript</div>
+      <div class="topics">
+        <a class="topic-card" href="Floor-03_Async-JavaScript/20_Event-Loop-Mental-Model/index.html">
+          <div class="topic-num">Topic 20</div>
+          <div class="topic-name">Event Loop — Mental Model</div>
+          <span class="tag t-async">Async JS</span>
+        </a>
+        <a class="topic-card" href="Floor-03_Async-JavaScript/21_CallStack-WebAPIs-CallbackQueue/index.html">
+          <div class="topic-num">Topic 21</div>
+          <div class="topic-name">CallStack + WebAPIs + Callback Queue</div>
+          <span class="tag t-async">Async JS</span>
+        </a>
+        <a class="topic-card" href="Floor-03_Async-JavaScript/22_Microtasks-vs-Macrotasks/index.html">
+          <div class="topic-num">Topic 22</div>
+          <div class="topic-name">Microtasks vs Macrotasks</div>
+          <span class="tag t-async">Async JS</span>
+        </a>
+        <a class="topic-card" href="Floor-03_Async-JavaScript/23_setTimeout-setInterval/index.html">
+          <div class="topic-num">Topic 23</div>
+          <div class="topic-name">setTimeout & setInterval</div>
+          <span class="tag t-async">Async JS</span>
+        </a>
+        <a class="topic-card" href="Floor-03_Async-JavaScript/24_Promise-States/index.html">
+          <div class="topic-num">Topic 24</div>
+          <div class="topic-name">Promise — States</div>
+          <span class="tag t-async">Async JS</span>
+        </a>
+        <a class="topic-card" href="Floor-03_Async-JavaScript/25_Promise-Chaining/index.html">
+          <div class="topic-num">Topic 25</div>
+          <div class="topic-name">Promise Chaining</div>
+          <span class="tag t-async">Async JS</span>
+        </a>
+        <a class="topic-card" href="Floor-03_Async-JavaScript/26_Promise-all-allSettled-race-any/index.html">
+          <div class="topic-num">Topic 26</div>
+          <div class="topic-name">Promise.all / allSettled / race / any</div>
+          <span class="tag t-async">Async JS</span>
+        </a>
+        <a class="topic-card" href="Floor-03_Async-JavaScript/27_Async-Await/index.html">
+          <div class="topic-num">Topic 27</div>
+          <div class="topic-name">Async / Await</div>
+          <span class="tag t-async">Async JS</span>
+        </a>
+        <a class="topic-card" href="Floor-03_Async-JavaScript/28_TryCatch-with-Async/index.html">
+          <div class="topic-num">Topic 28</div>
+          <div class="topic-name">try/catch with Async Functions</div>
+          <span class="tag t-async">Async JS</span>
+        </a>
+        <a class="topic-card" href="Floor-03_Async-JavaScript/29_Sequential-vs-Parallel-Calls/index.html">
+          <div class="topic-num">Topic 29</div>
+          <div class="topic-name">Sequential vs Parallel API Calls</div>
+          <span class="tag t-async">Async JS</span>
+        </a>
+        <a class="topic-card" href="Floor-03_Async-JavaScript/30_Fetch-API-CORS-AbortController/index.html">
+          <div class="topic-num">Topic 30</div>
+          <div class="topic-name">Fetch API + CORS + AbortController</div>
+          <span class="tag t-async">Async JS</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="floor-block">
+      <div class="floor-title">Floor 04 — Advanced JS</div>
+      <div class="topics">
+        <a class="topic-card" href="Floor-04_Advanced-JS/31_Higher-Order-Functions/index.html">
+          <div class="topic-num">Topic 31</div>
+          <div class="topic-name">Higher-Order Functions</div>
+          <span class="tag t-adv">Advanced</span>
+        </a>
+        <a class="topic-card" href="Floor-04_Advanced-JS/32_map-filter-reduce/index.html">
+          <div class="topic-num">Topic 32</div>
+          <div class="topic-name">map / filter / reduce</div>
+          <span class="tag t-adv">Advanced</span>
+        </a>
+        <a class="topic-card" href="Floor-04_Advanced-JS/33_forEach-vs-map/index.html">
+          <div class="topic-num">Topic 33</div>
+          <div class="topic-name">forEach vs map</div>
+          <span class="tag t-adv">Advanced</span>
+        </a>
+        <a class="topic-card" href="Floor-04_Advanced-JS/34_Pure-vs-Impure-Functions/index.html">
+          <div class="topic-num">Topic 34</div>
+          <div class="topic-name">Pure vs Impure Functions</div>
+          <span class="tag t-adv">Advanced</span>
+        </a>
+        <a class="topic-card" href="Floor-04_Advanced-JS/35_Currying-and-Partial-Application/index.html">
+          <div class="topic-num">Topic 35</div>
+          <div class="topic-name">Currying & Partial Application</div>
+          <span class="tag t-adv">Advanced</span>
+        </a>
+        <a class="topic-card" href="Floor-04_Advanced-JS/36_Destructuring-Nested-Default/index.html">
+          <div class="topic-num">Topic 36</div>
+          <div class="topic-name">Destructuring</div>
+          <span class="tag t-adv">Advanced</span>
+        </a>
+        <a class="topic-card" href="Floor-04_Advanced-JS/37_Spread-and-Rest/index.html">
+          <div class="topic-num">Topic 37</div>
+          <div class="topic-name">Spread & Rest</div>
+          <span class="tag t-adv">Advanced</span>
+        </a>
+        <a class="topic-card" href="Floor-04_Advanced-JS/38_Optional-Chaining-Nullish-Coalescing/index.html">
+          <div class="topic-num">Topic 38</div>
+          <div class="topic-name">Optional Chaining & Nullish Coalescing</div>
+          <span class="tag t-adv">Advanced</span>
+        </a>
+        <a class="topic-card" href="Floor-04_Advanced-JS/39_Array-Methods-Advanced/index.html">
+          <div class="topic-num">Topic 39</div>
+          <div class="topic-name">Array Methods — Advanced</div>
+          <span class="tag t-adv">Advanced</span>
+        </a>
+        <a class="topic-card" href="Floor-04_Advanced-JS/40_Object-Methods-Advanced/index.html">
+          <div class="topic-num">Topic 40</div>
+          <div class="topic-name">Object Methods — Advanced</div>
+          <span class="tag t-adv">Advanced</span>
+        </a>
+        <a class="topic-card" href="Floor-04_Advanced-JS/41_Map-Set-WeakMap-WeakSet/index.html">
+          <div class="topic-num">Topic 41</div>
+          <div class="topic-name">Map, Set, WeakMap, WeakSet</div>
+          <span class="tag t-adv">Advanced</span>
+        </a>
+        <a class="topic-card" href="Floor-04_Advanced-JS/42_Generators-and-Iterators/index.html">
+          <div class="topic-num">Topic 42</div>
+          <div class="topic-name">Generators & Iterators</div>
+          <span class="tag t-adv">Advanced</span>
+        </a>
+        <a class="topic-card" href="Floor-04_Advanced-JS/43_Modules-Import-Export/index.html">
+          <div class="topic-num">Topic 43</div>
+          <div class="topic-name">Modules — import / export</div>
+          <span class="tag t-adv">Advanced</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="floor-block">
+      <div class="floor-title">Floor 05 — DOM & Browser APIs</div>
+      <div class="topics">
+        <a class="topic-card" href="Floor-05_DOM-and-Browser-APIs/44_Event-Delegation/index.html">
+          <div class="topic-num">Topic 44</div>
+          <div class="topic-name">Event Delegation</div>
+          <span class="tag t-dom">DOM</span>
+        </a>
+        <a class="topic-card" href="Floor-05_DOM-and-Browser-APIs/45_Event-Bubbling-vs-Capturing/index.html">
+          <div class="topic-num">Topic 45</div>
+          <div class="topic-name">Event Bubbling vs Capturing</div>
+          <span class="tag t-dom">DOM</span>
+        </a>
+        <a class="topic-card" href="Floor-05_DOM-and-Browser-APIs/46_stopPropagation-vs-preventDefault/index.html">
+          <div class="topic-num">Topic 46</div>
+          <div class="topic-name">stopPropagation vs preventDefault</div>
+          <span class="tag t-dom">DOM</span>
+        </a>
+        <a class="topic-card" href="Floor-05_DOM-and-Browser-APIs/47_Intersection-Observer/index.html">
+          <div class="topic-num">Topic 47</div>
+          <div class="topic-name">Intersection Observer</div>
+          <span class="tag t-dom">DOM</span>
+        </a>
+        <a class="topic-card" href="Floor-05_DOM-and-Browser-APIs/48_MutationObserver/index.html">
+          <div class="topic-num">Topic 48</div>
+          <div class="topic-name">MutationObserver</div>
+          <span class="tag t-dom">DOM</span>
+        </a>
+        <a
+          class="topic-card"
+          href="Floor-05_DOM-and-Browser-APIs/49_LocalStorage-SessionStorage-Cookies-IndexedDB/index.html"
+        >
+          <div class="topic-num">Topic 49</div>
+          <div class="topic-name">Storage APIs</div>
+          <span class="tag t-dom">DOM</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="floor-block">
+      <div class="floor-title">Floor 06 — Performance & Memory</div>
+      <div class="topics">
+        <a class="topic-card" href="Floor-06_Performance-and-Memory/50_Debounce/index.html">
+          <div class="topic-num">Topic 50</div>
+          <div class="topic-name">Debounce</div>
+          <span class="tag t-perf">Performance</span>
+        </a>
+        <a class="topic-card" href="Floor-06_Performance-and-Memory/51_Throttle/index.html">
+          <div class="topic-num">Topic 51</div>
+          <div class="topic-name">Throttle</div>
+          <span class="tag t-perf">Performance</span>
+        </a>
+        <a class="topic-card" href="Floor-06_Performance-and-Memory/52_requestAnimationFrame/index.html">
+          <div class="topic-num">Topic 52</div>
+          <div class="topic-name">requestAnimationFrame</div>
+          <span class="tag t-perf">Performance</span>
+        </a>
+        <a class="topic-card" href="Floor-06_Performance-and-Memory/53_Memory-Leaks/index.html">
+          <div class="topic-num">Topic 53</div>
+          <div class="topic-name">Memory Leaks</div>
+          <span class="tag t-perf">Performance</span>
+        </a>
+        <a class="topic-card" href="Floor-06_Performance-and-Memory/54_Web-Workers/index.html">
+          <div class="topic-num">Topic 54</div>
+          <div class="topic-name">Web Workers</div>
+          <span class="tag t-perf">Performance</span>
+        </a>
+        <a class="topic-card" href="Floor-06_Performance-and-Memory/55_Code-Splitting-and-Lazy-Loading/index.html">
+          <div class="topic-num">Topic 55</div>
+          <div class="topic-name">Code Splitting & Lazy Loading</div>
+          <span class="tag t-perf">Performance</span>
+        </a>
+        <a class="topic-card" href="Floor-06_Performance-and-Memory/56_Chrome-DevTools-Performance-Memory/index.html">
+          <div class="topic-num">Topic 56</div>
+          <div class="topic-name">Chrome DevTools — Performance tab</div>
+          <span class="tag t-perf">Performance</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="floor-block">
+      <div class="floor-title">Floor 07 — Design Patterns</div>
+      <div class="topics">
+        <a class="topic-card" href="Floor-07_Design-Patterns/57_Module-Pattern/index.html">
+          <div class="topic-num">Topic 57</div>
+          <div class="topic-name">Module Pattern</div>
+          <span class="tag t-pattern">Pattern</span>
+        </a>
+        <a class="topic-card" href="Floor-07_Design-Patterns/58_Observer-Pattern/index.html">
+          <div class="topic-num">Topic 58</div>
+          <div class="topic-name">Observer Pattern</div>
+          <span class="tag t-pattern">Pattern</span>
+        </a>
+        <a class="topic-card" href="Floor-07_Design-Patterns/59_Factory-Pattern/index.html">
+          <div class="topic-num">Topic 59</div>
+          <div class="topic-name">Factory Pattern</div>
+          <span class="tag t-pattern">Pattern</span>
+        </a>
+        <a class="topic-card" href="Floor-07_Design-Patterns/60_Singleton-Pattern/index.html">
+          <div class="topic-num">Topic 60</div>
+          <div class="topic-name">Singleton Pattern</div>
+          <span class="tag t-pattern">Pattern</span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
