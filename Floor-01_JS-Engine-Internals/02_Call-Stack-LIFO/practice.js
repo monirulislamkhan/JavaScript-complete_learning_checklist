@@ -48,7 +48,8 @@ function foo() {
 }
 foo(); */
 
-let a = { name: 'Rahul' };
-let b = a;
-b = { name: 'Amit' };
-console.log(a.name);
+var a = { name: 'Dubai Housing' };
+var b = a;
+b = { name: 'New Name' };
+
+console.log(b.name);
