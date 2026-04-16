@@ -48,8 +48,73 @@ function foo() {
 }
 foo(); */
 
-var a = { name: 'Dubai Housing' };
+/* var a = { name: 'Dubai Housing' };
 var b = a;
 b = { name: 'New Name' };
 
-console.log(b.name);
+console.log(b.name); */
+/* var a = { name: 'Dubai Housing' };
+var b = a;
+console.log(a); */
+/* function validatePageNumber(paramPage) {
+  paramPage = 'nam';
+  if (!paramPage) return 1;
+  const pageNumber = Number(paramPage);
+  console.log(pageNumber);
+}
+console.log(validatePageNumber(), typeof validatePageNumber()); */
+/* console.log(Number('abc'));
+console.log(Number('-5'));
+console.log(first); */
+
+/* function applyFilter() {
+  console.log(city); // 💥 ReferenceError? NAHI!
+  // Yahan koi error nahi
+
+  if (true) {
+    // console.log(city); // 💥 ReferenceError ← yahan crash
+    let city = 'Dubai';
+  }
+}
+applyFilter();
+ */
+
+/* function applyFilter() {
+  if (true) {
+    console.log(city); // 💥 ReferenceError: Cannot access 'city' before initialization
+    let city = 'Dubai';
+  }
+}
+
+applyFilter(); */
+
+/* function bookProperty() {
+  console.log(typeof bookingId); // Line A
+  console.log(typeof userName); // Line B
+
+  let bookingId = 'BK-12345';
+  var userName = 'Rahul';
+}
+
+bookProperty(); */
+
+/* function test1() {
+  console.log(x); // 💥 ReferenceError: x is not defined
+
+  if (true) {
+    let x = 10;
+  }
+}
+test1(); */
+
+console.log(typeof notDeclared);
+console.log(typeof notYetDeclared);
+let notYetDeclared = 'hello';
+
+function greet() {
+  if (true) {
+    console.log(typeof message);
+    let message = 'hi';
+  }
+}
+greet();
