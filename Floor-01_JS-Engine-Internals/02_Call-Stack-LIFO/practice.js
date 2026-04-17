@@ -107,7 +107,7 @@ bookProperty(); */
 }
 test1(); */
 
-console.log(typeof notDeclared);
+/* console.log(typeof notDeclared);
 console.log(typeof notYetDeclared);
 let notYetDeclared = 'hello';
 
@@ -118,3 +118,16 @@ function greet() {
   }
 }
 greet();
+ */
+
+// const currency = 'AED';
+function formatPrice(price) {
+  console.log(`${currency} ${price}`);
+}
+
+function japanModule() {
+  const currency = 'JPY';
+  formatPrice(5000);
+}
+
+japanModule();
