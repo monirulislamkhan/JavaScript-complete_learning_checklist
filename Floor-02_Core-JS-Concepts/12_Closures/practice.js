@@ -5,6 +5,3 @@
 //
 // HINT: Counter function banao jo private count maintain kare
 // ─────────────────────────────────────────
-
-// Your code here ↓
-

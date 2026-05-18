@@ -121,7 +121,7 @@ greet();
  */
 
 // const currency = 'AED';
-function formatPrice(price) {
+/* function formatPrice(price) {
   console.log(`${currency} ${price}`);
 }
 
@@ -131,3 +131,4 @@ function japanModule() {
 }
 
 japanModule();
+ */
